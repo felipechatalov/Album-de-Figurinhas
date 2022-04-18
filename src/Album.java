@@ -1,8 +1,7 @@
 public class Album{
-    private Pagina[np] paginas;
-    private qtdFigurinhas qtdFig;
-
-
+    private Pagina[] paginas;
+    private int qtdFigurinhas = 0;
+    private int maxPaginas = 0;
     // 32 selecoes
     // 1 selecao por pagina
     // pagina:
@@ -24,10 +23,17 @@ public class Album{
     // nome da selecao escrito em cima da pagina
     // figurinha do brasao + 5 de jogadores na 1 linha
     // mais 6 jogadores na linha debaixo
-    // fundo com 
+    // fundo com a bandeira da selecao  
 
 
-    public Album(int np){
-        this.np = np;
+    public Album(int maxPaginas){
+        this.maxPaginas = maxPaginas;
+    }
+
+    public String toString(){
+        return "Album{" + "paginas=" + paginas + 
+        ", qtdFigurinhas=" + qtdFigurinhas +
+        ", maxPaginas=" + maxPaginas + 
+        '}';
     }
 }
